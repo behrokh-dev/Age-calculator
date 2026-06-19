@@ -8,7 +8,7 @@ This project was created as one of my first JavaScript exercises to practice wor
 
 🔗 https://behrokh-dev.github.io/Age-calculator/
 
-##  preview
+## 📸 Preview
 
 <img width="1920" height="868" alt="Image" src="https://github.com/user-attachments/assets/bd42fc06-4f30-41ef-8995-a629eaeea96b" />
 
