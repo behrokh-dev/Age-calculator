@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*,*::before,*::after{padding:0;margin:0;box-sizing:border-box;}
+
+body{
+  min-height:100vh;
+  background:#f0f4ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:'Inter',sans-serif;
+  padding:2rem 1rem;
+}
+
+.wrap{
+  background:#ffffff;
+  border-radius:28px;
+  padding:2.5rem 2rem;
+  width:100%;
+  max-width:380px;
+  display:flex;
+  flex-direction:column;
+  gap:1.2rem;
+  border:1px solid rgba(99,102,241,0.15);
+  box-shadow:0 8px 40px rgba(99,102,241,0.12), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.wrap-title{
+  font-size:12px;
+  font-weight:600;
+  color:#a5b4fc;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+}
+
+#birthYear{
+  width:100%;
+  font-size:17px;
+  padding:12px 16px;
+  border-radius:12px;
+  border:1.5px solid #e0e7ff;
+  background:#f5f7ff;
+  color:#3730a3;
+  outline:none;
+  font-family:'Inter',sans-serif;
+  transition:border-color 0.15s,box-shadow 0.15s;
+}
+
+#birthYear::placeholder{color:#c7d2fe;font-size:15px;}
+
+#birthYear:focus{
+  border-color:#818cf8;
+  box-shadow:0 0 0 3px rgba(129,140,248,0.2);
+  background:#fff;
+}
+
+button{
+  width:100%;
+  padding:13px;
+  font-size:16px;
+  border-radius:12px;
+  border:none;
+  background:linear-gradient(135deg,#6366f1,#8b5cf6);
+  color:#fff;
+  cursor:pointer;
+  font-weight:700;
+  font-family:'Inter',sans-serif;
+  transition:all 0.12s;
+  box-shadow:0 4px 18px rgba(99,102,241,0.4);
+  letter-spacing:0.02em;
+}
+
+button:hover{
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  box-shadow:0 6px 24px rgba(99,102,241,0.55);
+  transform:translateY(-1px);
+}
+
+button:active{opacity:0.9;transform:translateY(0);}
+
+.result-box{
+  background:linear-gradient(135deg,#eef2ff,#f5f3ff);
+  border-radius:16px;
+  border:1.5px solid #e0e7ff;
+  padding:20px;
+  min-height:90px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+
+.result-label{
+  font-size:11px;
+  color:#a5b4fc;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+#result{
+  font-size:56px;
+  font-weight:700;
+  color:#4f46e5;
+  font-family:'Inter',sans-serif;
+  line-height:1;
+  min-height:56px;
+  display:flex;
+  align-items:center;
+}
+
+#result:empty::before{content:'--';color:#c7d2fe;font-size:36px;}
